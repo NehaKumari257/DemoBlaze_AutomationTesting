@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="Utility.Listerners"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="Testcases.tc004ProductSelection">
+        <methods>
+          <include name="productSelection"/>
+          <include name="start"/>
+          <include name="closeUp"/>
+        </methods>
+      </class> <!-- Testcases.tc004ProductSelection -->
+      <class name="Testcases.tc003Login">
+        <methods>
+          <include name="start"/>
+          <include name="loginTest" invocation-numbers="0 1"/>
+          <include name="closeUp"/>
+          <include name="declareSheetName2"/>
+          <include name="declareSheetName"/>
+        </methods>
+      </class> <!-- Testcases.tc003Login -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
